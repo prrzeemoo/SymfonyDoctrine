@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="col-sm-3">
+    <ul>
+        {#UŻYCIE PĘTLI FOR MOŻLIWE W PRZYPADKU WYŚWIETLANIA WIELU REKORDÓW#}
+        {% for post in posts %}
+            <li>{{ post.title }}</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
